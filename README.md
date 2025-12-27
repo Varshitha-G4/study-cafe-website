@@ -43,13 +43,17 @@ http://localhost:3000 (or the port defined in your configuration)
 
 ## Screenshots
 Here are few of the screenshots of our website:
-HOME PAGE
+
+***HOME PAGE***
 <img width="2880" height="4796" alt="Home_page" src="https://github.com/user-attachments/assets/d5011f34-d0ac-4a4e-b9a0-018819fff424" />
-ABOUT US
+
+***ABOUT US***
 <img width="2880" height="4374" alt="AboutUs" src="https://github.com/user-attachments/assets/098f61fe-5757-42e9-bcbe-0a4d270b6021" />
-MENU
+
+***MENU***
 <img width="2880" height="2994" alt="MenuPage" src="https://github.com/user-attachments/assets/b6c21301-803c-49df-9f7e-d04c5c618cf4" />
-LOGIN
+
+***LOGIN***
 <img width="2879" height="1417" alt="Login" src="https://github.com/user-attachments/assets/2cfa9625-1732-442a-9025-8462846a67de" />
 
 
