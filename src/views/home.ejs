@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Caloroso: Your Cup of Comfort</title>
+    <link rel="stylesheet" href="/cssFiles/home.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+    </style>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+  </style>
+  <script type="text/javascript" src="/jsFiles/home.js"></script>
+  <body>
+    <%- include("partials/header") %>
+    <main>
+      <div class="background-container">
+        <img
+          id="homepg-img-cover"
+          src="images/coffeebook_final.png"
+          alt="coffee"
+        />
+        <br /><br /><br />
+        <span class="dot">•</span>
+        <span class="satisfy-regular">Welcome to Café Caloroso</span
+        ><br /><br />
+        <span class="your-cup"
+          >YOUR &nbsp;CUP <br />
+          <span class="of-box">of</span> &nbsp;COMFORT</span
+        ><br /><br /><br />
+        <div class="sub-line">
+          Sip, study, and relax with the perfect blend of peace and
+        </div>
+        <div class="sub-line">
+          productivity, whether you're catching up on work or simply
+        </div>
+        <div class="sub-line">unwinding—we've got everything you need.</div>
+
+        <a href="/reserve">
+          <button class="btn-style" id="order-now">Book Now!!</button>
+        </a>
+        <div id="about-us-container">
+          <div>
+            At Café Caloroso, we believe in more than just a great cup of
+            coffee. Our space is designed for creativity, calm, and community.
+            Discover more about our story and what makes us unique.
+            <a href="/about"><button class="btn-style" id="explore-our-roots-btn">
+              Know About Us
+            </button>
+          </a>
+          </div>
+          <div>
+            <img id="about-us-img" src="images/logo-withoutBG.png" alt="img" />
+          </div>
+        </div>
+      </div>
+      <div class="menu-container">
+        <div class="your-cup">
+          <div class="menu-header">
+            <div>
+              <span class="our-style">Our </span
+              ><span class="menu-style">Menu</span>
+            </div>
+            <a href="/menu">
+              <button class="menu-button-right">Explore Our Menu →</button>
+            </a>
+          </div>
+        </div>
+
+        <br /><br />
+
+        <div class="menu-image-gallery">
+          <img src="images/coffee2.png" alt="Image 1" />
+
+          <img src="images/ChocolateCupcakes.jpg" alt="Image 3" />
+          <img src="images/Chocolate Croissants.png" alt="Image 2" />
+          <img src="images/Brownie.jpeg" />
+        </div>
+      </div>
+
+      <div class="contact-us-container">
+        <h2>Contact Us</h2>
+        <p>For any inquiries or feedback, feel free to reach out to us.</p>
+        <a href="/contactus">Contact Us</a>
+      </div>
+    </main>
+    <%- include("partials/footer") %>
+  </body>
+</html>

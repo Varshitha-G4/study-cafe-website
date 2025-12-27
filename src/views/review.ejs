@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="/cssFiles/review.css" />
+    <script src="/jsFiles/review.js" defer></script>
+  </head>
+  <body>
+    
+    <%- include("partials/header") %>
+
+    <main >
+    <div class="testimonial-slider">
+      <h1>Hear from Our Regulars</h1>
+
+      <!-- Testimonial List -->
+      <div class="testimonial-list" role="region" aria-label="Testimonials">
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <!-- Bootstrap Icon -->
+          <i class="bi bi-quote"></i>
+
+          <blockquote>
+            ⭐⭐⭐⭐⭐ <br />
+            <b> A Perfect Study Spot! </b> <br />
+            "This café is an absolute gem for anyone looking for a calm and
+            focused study environment. The seating is super comfortable, the
+            lighting is perfect, and the Wi-Fi is lightning-fast. I also
+            appreciate the quiet atmosphere—ideal for productivity. Bonus: Their
+            coffee is excellent and keeps you going for hours!"
+          </blockquote>
+
+          <!-- User Info -->
+          <div class="user-info">
+            <img src="/images/reviewProfile1.png" alt="" />
+            <div class="user-details">
+              <p class="name">Sucheta</p>
+              <p class="company">student, Pes University</p>
+            </div>
+          </div>
+        </div>
+        <!-- /Testimonial -->
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <!-- Bootstrap Icon -->
+          <i class="bi bi-quote"></i>
+
+          <blockquote>
+            ⭐⭐⭐⭐ <br />
+            <b> The Perfect Blend of Comfort and Productivity </b> <br />
+            "This café is thoughtfully designed for students and professionals.
+            The soft lighting, ergonomic seating, and a variety of drink options
+            make it so easy to settle in and work for hours. It’s also
+            incredibly clean, and the staff are always welcoming. Will
+            definitely be back!"
+          </blockquote>
+
+          <!-- User Info -->
+          <div class="user-info">
+            <img src="/images/reviewProfile2.png" alt="" />
+            <div class="user-details">
+              <p class="name">Nishanth Dutta</p>
+              <p class="company">student, KIMS</p>
+            </div>
+          </div>
+        </div>
+        <!-- /Testimonial -->
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <!-- Bootstrap Icon -->
+          <i class="bi bi-quote"></i>
+
+          <blockquote>
+            ⭐⭐⭐⭐⭐ <br />
+            <b> Best Study Café in Town! </b> <br />
+            "I've tried several study spots, and this one takes the cake! The
+            quiet environment, high-speed Wi-Fi, and tasty food make it a
+            no-brainer for long study sessions. I appreciate how they also offer
+            a loyalty program for frequent visitors. Highly recommended!"
+          </blockquote>
+
+          <!-- User Info -->
+          <div class="user-info">
+            <img src="/images/reviewProfile3.png" alt="" />
+            <div class="user-details">
+              <p class="name">Bharath</p>
+              <p class="company">freelancer , ANYWHERE</p>
+            </div>
+          </div>
+        </div>
+        <!-- /Testimonial -->
+      </div>
+      <!-- /Testimonial List -->
+
+      <!-- Button Navigation -->
+      <button class="nav prev" aria-label="Previous Testimonial">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <button class="nav next" aria-label="Next Testimonial">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+      <!-- /Button Navigation -->
+
+      <!-- Dot Navigation -->
+      <div class="dots-container"></div>
+      <!-- /Dot Navigation -->
+    </div>
+  </main>
+  <%- include("partials/footer") %>
+  </body>
+</html>

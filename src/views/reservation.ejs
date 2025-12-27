@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Reservation </title>
+    <link rel="stylesheet" href="/cssFiles/reservation.css">
+    <script src="/jsFiles/reservation.js"></script>
+    <script>
+        function showAlert() {
+            alert("Great! Your table is reserved!");
+        }
+    </script>
+</head>
+<body>
+    <%- include("partials/header") %>
+    <main>
+    <div class="container">
+        <div class="reservation-form">
+            <h2> Online Reservation</h2>
+            <p>Booking request: +88-123-123456 or fill out the order form</p>
+            <form method="POST" action="/reserve" onsubmit="showAlert()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="num-guests">Number of Guests:</label>
+                <select id="num-guests" name="numGuests">
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4" selected> 4 </option>
+                    </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button id="myButton" type="submit">Reserve</button>
+            </form>
+        </div>
+    </div>
+    <%- include("partials/footer") %>
+</main>
+</body>
+</html>

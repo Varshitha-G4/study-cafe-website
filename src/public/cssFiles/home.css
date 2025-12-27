@@ -1,0 +1,248 @@
+/* to make the background color only upto a certain length(make a container- but the padding is auto-applying)
+to remove the white spaces around the edges initialize padding and margin to 0 */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0b16042;
+}
+
+.background-container {
+  position: relative;
+  margin-top: -100px; /* Move the background upwards */
+  padding-top: 100px;
+  height: 900px;
+  background-color: #261a0b;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#homepg-img-cover {
+  position: absolute;
+  height: 100vh;
+  width: 47%;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  object-fit: cover;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #fffff0;
+  padding-left: 15px;
+}
+
+.your-cup {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: #fffff0;
+  padding-left: 100px;
+}
+
+.menu-button {
+  padding: 20px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #a57a5b; /* Adjust to match your theme */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.of-box {
+  display: inline-block; /* Make the element respect padding and border */
+  border: 3px solid #e5d3b363;
+  padding: 3px 8px; /* Space around the word inside the box */
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  margin-left: 100px; /* to move the box to the right*/
+}
+.dot {
+  color: #b99976;
+  font-size: 60px;
+  padding-left: 100px;
+}
+
+.sub-line {
+  color: #b99976;
+  font-size: 20px;
+  padding-left: 100px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+::selection {
+  background-color: #b99976;
+  color: #fffff0;
+}
+
+#order-now {
+  margin-left: 100px; /* if u use padding then the inner contents of the button will be affected*/
+  margin-top: 100px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.btn-style:hover{
+ cursor: pointer;
+}
+
+#about-us-container {
+  background-color: #e5d3b3;
+  color: #261a0b;
+  width: 60%;
+  height: 25%;
+  margin-top: 150px;
+  margin-left: 290px;
+  font-family: "Playpen Sans", sans-serif;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  font-size: 23px;
+  display: flex;
+  align-items: center; /*to align text and img to the center (vertically)*/
+  margin-right: auto;
+
+  margin-bottom: 300px;
+}
+
+#about-us-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#about-us-img {
+  position: relative;
+  height: auto;
+  width: 390px;
+  align-items: left;
+  border-radius: 30px;
+  margin: 10px 20px;
+}
+
+#explore-our-roots-btn {
+  background-color: #261a0b;
+  color: #d2b48c;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#explore-our-roots-btn:hover {
+  color: #261a0b;
+  background-color: #fffff0;
+}
+
+.menu-container {
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+.menu-image-gallery {
+  display: flex;
+  justify-content: space-around; /* Space between the images */
+  height: auto;
+  margin: 10px auto 0;
+  width: 80%;
+}
+
+.menu-image-gallery img {
+  width: 225px; /* Set width of each image */
+  height: auto;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+
+}
+
+.menu-image-gallery img:hover  {
+  transform: scale(1.1);
+  
+}
+
+.our-style {
+  color: #261a0b;
+}
+
+.menu-style {
+  color: #664229;
+}
+
+.sign-up-container {
+  background-color: #e5d3b3;
+  color: #261a0b;
+}
+
+
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-button-right {
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #fffff0;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  background-color: #261a0b;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.menu-button-right:hover{
+  cursor: pointer;
+  background-color: #d2b48c;
+  color: #8b4513;
+}
+
+.contact-us-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #b99976;
+  font-family: "Playpen Sans", sans-serif;
+
+  margin: 30px 0;
+  padding: 20px 10px;
+}
+
+.contact-us-container h2 {
+  font-size: 28px;
+  color: #261a0b;
+}
+
+.contact-us-container p {
+  font-size: 18px;
+  color: #fffff0;
+  margin: 10px 0;
+}
+
+.contact-us-container a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fffff0;
+  background-color: #8b4513;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.contact-us-container a:hover {
+  background-color: #a0522d;
+}
+

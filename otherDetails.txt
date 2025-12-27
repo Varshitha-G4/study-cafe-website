@@ -1,0 +1,8 @@
+cd src
+node index.js
+
+Changes u can make:
+1. Make the review page dynamic
+2. Goddd... change the pomodoro code for godsake
+3. Cart can be added
+4. After login, add an option to logout also.. and I don't see the essence of login..?? like why is there a login option?? do something about it

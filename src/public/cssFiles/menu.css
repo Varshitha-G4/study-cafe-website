@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+body {
+  background-color: #261a0b; /* Light background */
+  color: #261a0b; /* Dark text color */
+}
+.box1 {
+  margin: 20px;
+  padding: 5px;
+  background-color: #d2b48c; /* Light brown */
+  text-align: center;
+  font-family: "Playpen Sans", sans-serif;
+}
+h2 {
+  border-bottom: 2px solid #664229; /* Darker brown */
+  padding-bottom: 10px;
+  font-family: "Playpen Sans", sans-serif;
+}
+.menu-section {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #b99976; /* Medium brown */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-section:hover {
+  transform: scale(1.005);
+  background-color: #d2b48c; 
+  /* box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); */
+}
+.menu-section:hover h2 {
+  font-style: oblique;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 85vw;
+}
+.cards .col {
+  background-color: #e5d3b3; /* Light background for cards */
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  color: #fff; /* White text for card content */
+  cursor: pointer;
+  transition: 400ms;
+  position: relative;
+  background-color: #987554; /* Darker brown for card background */
+}
+.cards .card img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10%;
+  margin-bottom: 5px;
+  padding: 10px;
+  object-fit: cover;
+}
+.cards .card p.tip {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: oblique;
+  padding-bottom: 15px;
+  margin-top: -10px; /* Moves text up */
+  font-family: "Satisfy", cursive;
+}
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}

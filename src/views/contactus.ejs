@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Restoran - Contact Info</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="stylesheet" href="/cssFiles/contactus.css" />
+    <script>
+      function showAlert() {
+          alert("Form submitted!");
+      }
+  </script>
+  </head>
+
+  <body>
+   <%- include ("partials/header") %>
+    <main>
+      <!-- Hero Header -->
+      <div class="hero-header">
+        <h1>Contact Us</h1>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="container">
+        <div class="contact-info-box">
+          <h4>Contact Information</h4>
+          <p><strong>Address:</strong> ndjehfksjdf</p>
+          <p><strong>Phone:</strong> (+91) 12345-67890</p>
+          <p><strong>Email:</strong>cafecolaroso@gmail.com</p>
+          <p>
+            <strong>Hours:</strong><br />Mon-Sat: 9AM - 9PM<br />Sun: 10AM - 8PM
+          </p>
+        </div>
+
+        <!-- <div class="contact-info-image">
+                <img src="coffeebeans.jpg" alt="Coffee Beans">
+            </div> -->
+
+        <div class="contact-form">
+          <h2>Contact For Any Query</h2>
+          <form method="POST" action="/contactus" onsubmit="showAlert()">
+            <div>
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required />
+            </div>
+            <div>
+                <label>Your Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div>
+                <label>Subject</label>
+                <input type="text" name="Subject" placeholder="Enter subject" required />
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea name="message" placeholder="Leave your message here" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+</main>
+<%- include ("partials/footer") %>
+  </body>
+</html>

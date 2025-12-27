@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/cssFiles/login.css" />
+    <title>Coffee Shop Login</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Signup Form -->
+        <form action="/signup" method="post" id="signup-form" >
+            <h1 class="title">Sign Up</h1>
+            <div class="box">
+                <div class="icon"><i class="bx bx-user-circle"></i></div>
+                <div class="input-box">
+                    <label class="label">Enter your email</label>
+                    <input type="email" class="input" name="email"/>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="bx bx-user-circle"></i></div>
+                <div class="input-box">
+                    <label class="label">Enter your username</label>
+                    <input type="text" class="input" name="username"/>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="bx bx-lock"></i></div>
+                <div class="input-box">
+                    <label class="label">Enter your password</label>
+                    <input type="password" class="input" name="password"/>
+                </div>
+            </div>
+            <input type="submit" class="login-button" value="Register" />
+            <div class="sign">Already have an account? <a href="/login" id="show-login">Login</a></div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/jsFiles/login.js"></script>
+</body>
+
+</html>

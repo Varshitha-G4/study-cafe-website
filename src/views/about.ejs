@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/cssFiles/about.css" />
+    <title>About Us</title>
+  </head>
+
+  <body>
+    <%- include("partials/header") %>
+    <main>
+      <section class="about">
+        <pre><h1>About  Café  Caloroso</h1></pre>
+        <p>Your Cup of Comfort</p>
+        <div class="about-info">
+          <div class="about-img">
+            <img src="/images/aboutus.jpg" alt="Coloraso Interior" />
+          </div>
+          <div>
+            <p>
+              At Caloroso, inspired by the Italian word for "warmth," we’ve
+              created a cozy, tranquil space designed to help you focus and
+              relax. With plenty of natural light, comfortable seating, and a
+              calming atmosphere, it's the perfect spot to get work done, study
+              for an exam, or enjoy a quiet break with a cup of coffee. Whether
+              you're working solo or collaborating with others, our minimalist
+              design and energizing coffee will keep you fueled and inspired.
+            </p>
+           
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <h1>Meet Our Amazing Team</h1>
+        <div class="team-cards">
+          <div class="card">
+            <div class="card-img">
+              <img src="/images/varshi.png" alt="Jane" />
+            </div>
+            <div class="card-info">
+              <h2 class="card-name">Varshitha</h2>
+              <p class="card-role">Chef and Founder</p>
+              <p class="card-email">varshitha@cafecaloroso.com</p>
+              <button>Contact</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="/images/tanman.png" alt="Miller" />
+            </div>
+            <div class="card-info">
+              <h2 class="card-name">Tanmaya</h2>
+              <p class="card-role">Founder</p>
+              <p class="card-email">tanmaya@cafecaloroso.com</p>
+              <button>Contact</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="/images/sheems.png" alt="Joe" />
+            </div>
+            <div class="card-info">
+              <h2 class="card-name">Sheema</h2>
+              <p class="card-role">Baker and Founder</p>
+              <p class="card-email">sheema@cafecaloroso.com</p>
+              <button>Contact</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include("partials/footer") %>
+  </body>
+</html>

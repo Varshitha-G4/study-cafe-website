@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/cssFiles/login.css" />
+    <title>Coffee Shop Login</title>
+  </head>
+
+  <body>
+    <div class="content">
+     
+      <!-- Login Form -->
+      <form id="login-form" action="/login" method="post">
+        <h1 class="title">Login</h1>
+        <div class="box">
+          <div class="icon"><i class="bx bx-user-circle"></i></div>
+          <div class="input-box">
+            <label class="label" for="name">Enter Your Username</label>
+            <input type="text" class="input" name="username" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="bx bx-lock"></i></div>
+          <div class="input-box">
+            <label class="label" for="password">Enter Your Password</label>
+            <input type="password" class="input" name="password" required />
+          </div>
+        </div>
+        <div class="forgot"><a href="#">Forgot password</a></div>
+        <input type="submit" class="login-button" value="Login" />
+        <div class="sign">
+          Don't have an account?
+          <a href="/signup" id="show-signup">Sign up now</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/jsFiles/login.js"></script>
+  </body>
+</html>

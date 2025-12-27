@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <link rel="stylesheet" href="/cssFiles/pomodoro.css">
+</head>
+<body>
+  <%- include("partials/header") %> <!-- Header -->
+  
+  <main>
+    <div id="root"></div> <!-- React app will be rendered here -->
+  </main>
+
+  <%- include("partials/footer") %> <!-- Footer -->
+
+  <script type="text/babel">
+    const App = () => {
+      const [timeLeft, setTimeLeft] = React.useState(25*60);
+      const [isRunning, setIsRunning] = React.useState(false);
+      const [timerLabel, setTimerLabel] = React.useState("Focus!!");
+
+      React.useEffect(() => {
+        let timer;
+        if (isRunning) {
+          timer = setInterval(() => {
+            setTimeLeft((prev) => {
+              if (prev <= 1) {
+                clearInterval(timer);
+                setIsRunning(false);
+                setTimerLabel(timerLabel === "Focus!!" ? "Break" : "Focus!!");
+                return timerLabel === "Focus!!" ? 5 * 60 : 25*60;
+              }
+              return prev - 1;
+            });
+          }, 1000);
+        }
+        return () => clearInterval(timer);
+      }, [isRunning, timerLabel]);
+
+      const formatTime = (time) => {
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        return `${minutes.toString().padStart(2, "0")}:${seconds
+          .toString()
+          .padStart(2, "0")}`;
+      };
+
+      return (
+        <div>
+          <h1 style={{ color: "#4e342e" }}>Pomodoro Timer</h1>
+          <h2 className="timer-display">{timerLabel}</h2>
+          <div className="timer-display">{formatTime(timeLeft)}</div>
+          <div>
+            <button
+              className="button"
+              onClick={() => setIsRunning(true)}
+              disabled={isRunning}
+            >
+              Start
+            </button>
+            <button
+              className="button"
+              onClick={() => setIsRunning(false)}
+              disabled={!isRunning}
+            >
+              Pause
+            </button>
+            <button
+              className="button"
+              onClick={() => {
+                setIsRunning(false);
+                setTimeLeft(25*60);
+                setTimerLabel("Focus!!");
+              }}
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      );
+    };
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+body {
+    font-family: "Playpen Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #261A0B;
+}
+
+.navbar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar .navbar-brand h1 {
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 1.8rem;
+    color: #261A0B;
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #261A0B;
+    color: #000;
+}
+
+.hero-header {
+    background-color:#987554;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-header h1 {
+    font-size: 2.5rem;
+    font-family: "Playpen Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.breadcrumb li {
+    display: inline;
+    margin-right: 5px;
+    color: #261A0B;
+}
+
+.breadcrumb li a {
+    color: #261A0B;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info-box {
+    width: 30%;
+    padding: 20px;
+    background-color:  #E5D3B3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-box h4 {
+    font-family: "Playpen Sans", sans-serif;
+    color: #261A0B;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+     display: block; /* Ensures the label is above the input */
+    font-size: 1rem;
+    margin-bottom: 3px; /* Adds a small gap between the label and the input */
+    color: #261A0B;
+}
+
+.contact-info-box p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #B99976;
+}
+
+.contact-form {
+    width: 60%;
+    margin-left: auto;
+    background-color:#E5D3B3;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #261A0B;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 30px); /* Ensures the fields stay within the container */
+    padding: 15px;
+    margin-bottom: 10px; /* Remove unnecessary extra margin */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #664229;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.contact-info-image {
+    width: 30%; /* Matches the width of the contact-info-box */
+    margin-top: 20px; /* Adds spacing between the contact-info-box and the image */
+    padding: 10px;
+    background-color: #E5D3B3; /* Matches the background color of the contact-info-box */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers the image within the div */
+}
+
+.contact-info-image img {
+    width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 5px; /* Optional: Adds a subtle rounded border to the image */
+}
