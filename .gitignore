@@ -9,3 +9,4 @@ pnpm-debug.log*
 .cache/
 .eslintcache
 .parcel-cache
+otherDetails.txt
